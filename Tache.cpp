@@ -4,63 +4,64 @@ using namespace std;
 
 #include "Tache.h"
 
-Tache::Tache(int id, const std::string& title, 
-    const std::string& desc, const std::string& creationDate, 
-    const std::string& dueDate, const std::string& status)
+// Definition du constructeur de la classe Tache
+Tache::Tache(int id, const string& title, 
+    const string& desc, const string& creationDate, 
+    const string& finishDate, const string& status)
     : identifiant(id), 
     titre(title), 
     description(desc), 
     dateCreation(creationDate), 
-    dateEcheance(dueDate), 
+    dateEcheance(finishDate), 
     statut(status) {}
 
 // Getters
-int Tache::getIdentifiant() const {
+int Tache::get_identifiant() const {
     return identifiant;
 }
 
-std::string Tache::getTitre() const {
+string Tache::get_titre() const {
     return titre;
 }
 
-std::string Tache::getDescription() const {
+string Tache::get_description() const {
     return description;
 }
 
-std::string Tache::getDateCreation() const {
+string Tache::get_dateCreation() const {
     return dateCreation;
 }
 
-std::string Tache::getDateEcheance() const {
+string Tache::get_dateEcheance() const {
     return dateEcheance;
 }
 
-std::string Tache::getStatut() const {
+string Tache::get_statut() const {
     return statut;
 }
 
 // Setters
-void Tache::setIdentifiant(int id) {
+void Tache::set_identifiant(int id) {
     identifiant = id;
 }
 
-void Tache::setTitre(const std::string& title) {
+void Tache::set_titre(const string& title) {
     titre = title;
 }
 
-void Tache::setDescription(const std::string& desc) {
+void Tache::set_description(const string& desc) {
     description = desc;
 }
 
-void Tache::setDateCreation(const std::string& creationDate) {
+void Tache::set_dateCreation(const string& creationDate) {
     dateCreation = creationDate;
 }
 
-void Tache::setDateEcheance(const std::string& dueDate) {
+void Tache::set_dateEcheance(const string& dueDate) {
     dateEcheance = dueDate;
 }
 
-void Tache::setStatut(const std::string& status) {
+void Tache::set_statut(const string& status) {
     statut = status;
 }
 
@@ -68,15 +69,16 @@ void Tache::setStatut(const std::string& status) {
 
 // Définition de la méthode afficherTache
 void Tache::afficherTache() const {
-    std::cout << "--- Affichage de la tache --- " <<endl;
-    std::cout << "ID : " << identifiant << std::endl;
-    std::cout << "Titre : " << titre << std::endl;
-    std::cout << "Description : " << description << std::endl;
-    std::cout << "Date de debut : " << dateCreation << std::endl;
-    std::cout << "Date de fin : " << dateEcheance << std::endl;
-    std::cout << "Statut : " << statut << std::endl;
+    cout << "--- Affichage de la tache --- " <<endl;
+    cout << "ID : " << identifiant << endl;
+    cout << "Titre : " << titre << endl;
+    cout << "Description : " << description << endl;
+    cout << "Date de debut : " << dateCreation << endl;
+    cout << "Date de fin : " << dateEcheance << endl;
+    cout << "Statut : " << statut << endl;
 }
 
+// Definition de la methode secondeAffiche
 void Tache::secondeAffiche() const {
-    std::cout << identifiant <<") [" << statut <<"] " << titre <<" - " << description <<" (" << dateCreation << " - " << dateEcheance <<") "<< endl ;
+    cout << identifiant <<") [" << statut <<"] " << titre <<" - " << description <<" (" << dateCreation << " - " << dateEcheance <<") "<< endl ;
 }

@@ -1,7 +1,18 @@
+/*
+Nom et prenom:  RATEFINANAHARY IL'aina
+Code permanent: RATI24030207
+
+Nom et prenom:  Diallo Salifou
+Code permanent: DIAS05020209
+
+Nom et prenom:  Barry Aminata
+Code permanent: BARA29569508
+*/
+
 #include <iostream>
-#include "Tache.h"
-#include "Utilisateur.h"
-#include "GestionnaireDeFichiers.h"
+#include "tache.h"
+#include "utilisateur.h"
+#include "GestionnairedeFichiers.h"
 class Test {
 public:
     static void lancerTests() {

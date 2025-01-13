@@ -13,14 +13,15 @@ private:
 
 public:
     Utilisateur(const std::string& name, const std::string& email);
+    
     // Méthodes pour gérer les tâches de l'utilisateur
     void ajouterTache(const Tache& tache);
-    void supprimerTache(int identifiantTache);
+    void supprimerTache(int idTache);
     void afficherToutesLesTaches() const;
 
     // Getters
-    std::string getNom() const;
-    std::string getEmail() const;
+    std::string get_nom() const;
+    std::string get_email() const;
     const std::vector<Tache>& getListeTaches() const;
 };
 

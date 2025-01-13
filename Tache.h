@@ -13,26 +13,26 @@ private:
     std::string statut;
 
 public:
-    Tache(int id, const std::string& title, const std::string& desc, const std::string& creationDate, const std::string& dueDate, const std::string& status);
+    Tache(int id, const std::string& title, const std::string& desc, const std::string& creationDate, const std::string& finishDate, const std::string& status);
     // Getters
-    int getIdentifiant() const;
-    std::string getTitre() const;
-    std::string getDescription() const;
-    std::string getDateCreation() const;
-    std::string getDateEcheance() const;
-    std::string getStatut() const;
+    int get_identifiant() const;
+    std::string get_titre() const;
+    std::string get_description() const;
+    std::string get_dateCreation() const;
+    std::string get_dateEcheance() const;
+    std::string get_statut() const;
 
     // Setters
-    void setIdentifiant(int id);
-    void setTitre(const std::string& title);
-    void setDescription(const std::string& desc);
-    void setDateCreation(const std::string& creationDate);
-    void setDateEcheance(const std::string& dueDate);
-    void setStatut(const std::string& status);
+    void set_identifiant(int id);
+    void set_titre(const std::string& title);
+    void set_description(const std::string& desc);
+    void set_dateCreation(const std::string& creationDate);
+    void set_dateEcheance(const std::string& finishDate);
+    void set_statut(const std::string& status);
 
     void afficherTache() const;
 
-
+    // methode utilisee pour respecter l'affichage attendu
     void secondeAffiche() const;
 };
 
